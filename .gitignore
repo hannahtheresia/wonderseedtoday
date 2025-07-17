@@ -1,0 +1,11 @@
+# Node.js / Next.js
+node_modules/
+.next/
+out/
+.env
+.env.local
+.DS_Store
+
+# VSCode & Logs
+.vscode/
+npm-debug.log*
