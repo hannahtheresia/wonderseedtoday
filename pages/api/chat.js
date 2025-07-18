@@ -1,3 +1,7 @@
+import { generatePrompt } from "../../lib/prompt";
+
+
+
 import { OpenAI } from "openai";
 
 // Initialize OpenAI with your API key
@@ -11,7 +15,14 @@ export default async function handler(req, res) {
     return res.status(405).json({ message: 'Only POST requests are allowed' });
   }
 
-  const { prompt } = req.body;
+  //const { prompt } = req.body;
+
+  const { userInput } = req.body;  // z.B. roher Input von der Webseite
+const prompt = generatePrompt(userInput);  // hier baust du den kompletten Prompt
+
+
+
+
 
   try {
     const chatResponse = await openai.chat.completions.create({

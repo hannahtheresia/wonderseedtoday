@@ -17,7 +17,9 @@ export default function Home() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ prompt: input }),
+        //body: JSON.stringify({ prompt: input }),
+      body: JSON.stringify({ userInput: input }),
+
       });
 
       const data = await res.json();
