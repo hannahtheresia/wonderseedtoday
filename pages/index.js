@@ -59,7 +59,7 @@ export default function Home() {
       </section>
 
       <footer className="footer">
-        Made with 💜 by WonderSeed
+       
       </footer>
     </main>
   );
