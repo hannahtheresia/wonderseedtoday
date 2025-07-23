@@ -30,7 +30,7 @@ export default function Home() {
       <header className="header">
         <h1 className="title">🌱 WonderSeed</h1>
         <p className="subtitle">
-          Create magical, heartwarming stories for children — instantly.
+          Nurturing emotional intelligence — one bedtime story at a time.
         </p>
       </header>
 
